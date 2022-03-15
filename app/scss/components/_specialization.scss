@@ -1,0 +1,75 @@
+.specialization {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    align-items: center;
+    gap: 80px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 50px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__left {
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 465px;
+      height: 285px;
+      @include backgroundImage(
+        url('../images/content/mosaic-big.png'),
+        contain
+      );
+      top: -40px;
+      right: -40px;
+      z-index: -1;
+      @include breakpointsMaxW($bp-991) {
+        display: none;
+      }
+    }
+
+    &::before {
+      @include elDef();
+      width: 213px;
+      height: 240px;
+      @include backgroundImage(url('../images/content/lines.png'), contain);
+      left: -150px;
+      bottom: -150px;
+      z-index: -1;
+
+      @include breakpointsMaxW($bp-container) {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    span {
+      color: var(--color-accent);
+    }
+    P {
+      &:not(:last-child) {
+        @include adaptive-value('margin-bottom', 30, 20, 1);
+      }
+    }
+  }
+
+  &--row {
+
+    .specialization {
+      &__wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  }
+}

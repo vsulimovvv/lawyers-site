@@ -1,0 +1,33 @@
+.footer {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+    color: #848587;
+    font-size: 15px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+    }
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: auto;
+      gap: 10px;
+    }
+  }
+
+  &__phone,
+  &__address {
+    @include breakpointsMaxW($bp-576) {
+      order: -1;
+    }
+  }
+
+  &__link {
+    transition: 150ms ease;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}

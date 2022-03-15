@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Юрист Журавлева</title>
+  </head>
+
+  <body>
+    <div class="popup popup--order-call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Обратный звонок</h2>
+      <div class="popup__text">
+        <p>Введите Ваши данные и мы свяжемся с Вами в ближайшее время</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="name">Имя</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            id="name"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Контактный телефон</label>
+          <input
+            class="form-submit__input"
+            type="tel"
+            id="tel"
+            placeholder="+7 (___) ___ - __ - __"
+            required
+          />
+        </div>
+
+        <div class="form-submit__group">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--submit">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Отправить заявку</h2>
+      <div class="popup__text">
+        <p>Введите Ваши данные и мы свяжемся с Вами в ближайшее время</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="name">Имя</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            id="name"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Контактный телефон</label>
+          <input
+            class="form-submit__input"
+            type="tel"
+            id="tel"
+            placeholder="+7 (___) ___ - __ - __"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Ваш комментарий</label>
+          <textarea
+            class="form-submit__input form-submit__input--textarea"
+            name="message"
+            id="message"
+            placeholder="Сообщение"
+          ></textarea>
+        </div>
+
+        <div class="form-submit__group">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Отправить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--consultation">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказать консультацию</h2>
+      <div class="popup__text">
+        <p>Введите Ваши данные и мы свяжемся с Вами в ближайшее время</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="name">Имя</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            id="name"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Контактный телефон</label>
+          <input
+            class="form-submit__input"
+            type="tel"
+            id="tel"
+            placeholder="+7 (___) ___ - __ - __"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Ваш комментарий</label>
+          <textarea
+            class="form-submit__input form-submit__input--textarea"
+            name="message"
+            id="message"
+            placeholder="Сообщение"
+          ></textarea>
+        </div>
+
+        <div class="form-submit__group">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать консультацию
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <div class="overlay"></div>
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Главная</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Обо мне</a>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Услуги
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Банкротство</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Защита активов</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Споры о правах на недвижимость и оборот недвижимости
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Подрядные споры</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Градостроительные отношения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Земельные отношения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Налоговые споры и вопросы налогообложения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Сопровождение бизнеса, строительных и инвестиционных проектов
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Прочие вопросы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Публикации
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Банкротство</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Защита активов</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Споры о правах на недвижимость и оборот недвижимости
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Подрядные споры</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Градостроительные отношения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Земельные отношения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Налоговые споры и вопросы налогообложения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Сопровождение бизнеса, строительных и инвестиционных проектов
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Прочие вопросы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo logo" href="index.html">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Обо мне</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Услуги</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Банкротство</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"> Защита активов </a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Споры о правах на недвижимость и оборот недвижимости</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Подрядные споры</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">
+                    Градостроительные отношения</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Земельные отношения</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Налоговые споры и вопросы налогообложения</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Сопровождение бизнеса, строительных и инвестиционных
+                    проектов</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Прочие вопросы</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Публикации</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Банкротство</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"> Защита активов </a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Споры о правах на недвижимость и оборот недвижимости</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Подрядные споры</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">
+                    Градостроительные отношения</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Земельные отношения</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Налоговые споры и вопросы налогообложения</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Сопровождение бизнеса, строительных и инвестиционных
+                    проектов</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Прочие вопросы</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__tools">
+        <button class="header__btn btn btn--light btn-call" type="button">
+          Заказать звонок
+        </button>
+        <a class="header__phone" href="tel:+79773365698">
+          <span class="header__phone-icon"></span>
+          <span class="header__phone-text">
+            <span class="color-accent">8 (977)</span> 336 56 98
+          </span>
+        </a>
+      </div>
+
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <div class="container container--aside">
+          <aside class="aside">
+  <div class="aside__socials socials--messengers">
+    <span class="socials__name">Мессенджеры</span>
+    <ul class="socials__list">
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--whatsapp"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--telegram"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="aside__socials socials--socials">
+    <span class="socials__name">Соц сети</span>
+    <ul class="socials__list">
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--vk"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--facebook"></a>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+        </div>
+        <section class="hero hero--about">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <span class="hero__overtitle">Юрист</span>
+        <h1 class="hero__title section-title">
+          Журавлёва <br />
+          Елена Петровна
+        </h1>
+      </div>
+
+      <a class="hero__scroll-down" href="#results" aria-label="Перейти ниже"></a>
+    </div>
+  </div>
+
+  <div class="hero__preview"></div>
+
+  <a class="hero__scroll-down hero__scroll-down--mobile" href="#results" aria-label="Перейти ниже"></a>
+</section>
+
+        <section class="results" id="results">
+  <div class="container">
+    <div class="results__tabs">
+      <div class="results__top">
+        <h2 class="results__title section-title">
+          Результаты моей успешной практики ведения дел по направлениям.
+        </h2>
+        <ul class="results__list">
+          <li class="results__item">
+            <button class="results__btn results__btn--active" type="button">
+              Споры, связанные с привлечением к субсидиарной ответственности
+            </button>
+          </li>
+          <li class="results__item">
+            <button class="results__btn" type="button">
+              Споры, связанные с оспариванием сделок должника (в банкротстве)
+            </button>
+          </li>
+          <li class="results__item">
+            <button class="results__btn" type="button">
+              Споры, связанные с включением в реестр требований кредиторов
+            </button>
+          </li>
+          <li class="results__item">
+            <button class="results__btn" type="button">
+              Иные споры в рамках банкротства
+            </button>
+          </li>
+          <li class="results__item">
+            <button class="results__btn" type="button">
+              Споры из договора подряда
+            </button>
+          </li>
+          <li class="results__item">
+            <button class="results__btn" type="button">Налоговые споры</button>
+          </li>
+          <li class="results__item">
+            <button class="results__btn" type="button">
+              Споры о правах на недвижимое имущество, в градостроительной и
+              земельной сферах
+            </button>
+          </li>
+          <li class="results__item">
+            <button class="results__btn" type="button">
+              Иные категории споров
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="results__disputes">
+        <div class="disputes-box active">
+          <h3 class="disputes-box__title section-title">
+            Споры, связанные с привлечением к субсидиарной ответственности
+          </h3>
+
+          <ul class="disputes-box__list">
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-103736/16</span> (Арбитражный суд города
+                Москвы, Девятый арбитражный апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в привлечении к субсидиарной
+                  ответственности руководителя должника (на сумму в 126.706.167
+                  руб.) по факту не передачи им первичной документации
+                  конкурсному управляющему.
+                </p>
+                <p>
+                  <span>Результат:</span> отказано в привлечении к субсидиарной
+                  ответственности руководителя должника по заявлениям бывших
+                  работников должника.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № A40-5498/19-78-9 «Б» </span>(Арбитражный суд города
+                Москвы. Разработка концепции ведения проекта).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в привлечении к субсидиарной
+                  ответственности руководителя (на сумму в 289.915.565 руб.) по
+                  факту несвоевременной подачи им заявления о банкротстве.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № A40-5498/19-78-9 «Б»</span> (Арбитражный суд города
+                Москвы, Девятый арбитражный апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <span> Результат:</span> отказано в привлечении к субсидиарной
+                ответственности руководителя по факту вменяемой ему не передачи
+                первичной документации конкурсному управляющему.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disputes-box">
+          <h3 class="disputes-box__title section-title">
+            Споры, связанные с оспариванием сделок должника (в банкротстве)
+          </h3>
+
+          <ul class="disputes-box__list">
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-45790/12</span> (Девятый арбитражный
+                апелляционный суд. Разработка концепции ведения проекта).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в признании недействительными
+                  двух договоров аренды недвижимого имущества и взыскании
+                  493.842.560 руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А41-47794/15</span> (Арбитражный суд Московской
+                области, Десятый арбитражный апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в оспаривании сделок должника
+                  на сумму в 45.148.000 руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-185433/17</span>
+                (Арбитражный суд города Москвы, Девятый арбитражный
+                апелляционный суд, Арбитражный суд Московского округа)
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в признании недействительными
+                  соглашений о прекращении договоров поручительства на сумму
+                  207.000.000 руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А65-5355/2017 </span>
+                (Арбитражный суд Республики Татарстан, Одиннадцатый арбитражный
+                апелляционный суд, Арбитражный суд Поволжского округа.
+                Разработка концепции ведения проекта).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в признании недействительным
+                  соглашения о прекращении ипотеки на двадцать три объекта
+                  недвижимости, находящихся в Московской области.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А12-43841/2017 </span>
+                (Арбитражный суд Волгоградской области, Двенадцатый арбитражный
+                апелляционный суд, Арбитражный суд Поволжского округа, Верховный
+                суд РФ. Разработка концепции ведения проекта).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в оспаривании сделок по
+                  возврату кредита, как совершенных с предпочтением в пользу
+                  банка, на сумму 41.476.627 руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А12-21397/2019 </span>
+                (Арбитражный суд Волгоградской области, Двенадцатый арбитражный
+                апелляционный суд, Арбитражный суд Поволжского округа).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в оспаривании сделок по
+                  отчуждению должником сорока двух объектов недвижимости
+                  (квартир), находящихся в г. Волгоград.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-255538/2018</span>
+                (Арбитражный суд Московского округа. Разработка концепции
+                ведения проекта.)
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отменено постановление апелляционной
+                  инстанции, отказано в оспаривании сделки на 312 млн. руб.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disputes-box">
+          <h3 class="disputes-box__title section-title">
+            Споры, связанные с включением в реестр требований кредиторов
+          </h3>
+
+          <ul class="disputes-box__list">
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А46-19146/2017</span> (Арбитражный суд Омской
+                области, Восьмой арбитражный апелляционный суд, Арбитражный суд
+                Западно-Сибирского округа).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> судом кассационной инстанции отменены
+                  судебные акты об отказе во включении требования кредитора на
+                  сумму 242 млн. руб. в реестр требований кредиторов, в рамках
+                  нового рассмотрения первой инстанцией указанное требование
+                  было включено в реестр.
+                </p>
+                <p>
+                  <span>Результат:</span> отказано во включении в реестр
+                  требований кредиторов должника требований на сумму в
+                  87.249.071 руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А12-21397/2019</span> .(Арбитражный суд
+                Волгоградской области, Двенадцатый арбитражный апелляционный
+                суд, Арбитражный суд Поволжского округа).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span>включение в реестр участников
+                  строительства должника требований в отношении сорока восьми
+                  объектов недвижимости (квартир), находящихся в г. Волгоград.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disputes-box">
+          <h3 class="disputes-box__title section-title">
+            Иные споры в рамках банкротства
+          </h3>
+
+          <ul class="disputes-box__list">
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело А40-209004/2015</span> (Арбитражный суд города
+                Москвы, Девятый арбитражный апелляционный суд. Разработка
+                концепции ведения проекта).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отстранение финансового управляющего
+                  должника.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disputes-box">
+          <h3 class="disputes-box__title section-title">
+            Споры из договора подряда
+          </h3>
+
+          <ul class="disputes-box__list">
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-26397/20-83-138</span> (Арбитражный суд города
+                Москвы, Девятый арбитражный апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> в пользу подрядчика взыскано порядка
+                  27 млн. руб., требования о взыскании заказчиком неустойки за
+                  просрочку выполнения работ в размере 45 млн. руб. признаны
+                  необоснованными, заказчику отказано во встречном иске и
+                  представленных им к зачету требованиях в общем размере 34 млн.
+                  руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-84678/2020</span> (Арбитражный суд города
+                Москвы, Девятый арбитражный апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано во взыскании неустойки за
+                  просрочку выполнения работ в размере 17 млн. руб.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disputes-box">
+          <h3 class="disputes-box__title section-title">Налоговые споры</h3>
+
+          <ul class="disputes-box__list">
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-46817/19-20-850</span> (Арбитражный суд города
+                Москвы, Девятый арбитражный апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> в рамках досудебной работы удалось
+                  уменьшить доначисления на сумму порядка 47 млн. руб.,
+                  доначисления в размере 88 млн. руб. остались к уплате.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Налоговая проверка нефтетрейдера</span> (Арбитражный суд
+                города Москвы, Девятый арбитражный апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> по результатам сопровождения налоговой
+                  проверки удалось уменьшить доначисления в 10 раз.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disputes-box">
+          <h3 class="disputes-box__title section-title">
+            Споры о правах на недвижимое имущество, в градостроительной и
+            земельной сферах
+          </h3>
+
+          <ul class="disputes-box__list">
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А41-42403/15 </span> (Арбитражный суд Московской
+                области, Десятый арбитражный апелляционный суд, Арбитражный суд
+                Московского округа).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отменено решение суда первой инстанции
+                  об обязании выдать разрешение на ввод многоквартирного дома в
+                  эксплуатацию.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № 33-30845/2018</span> (Московский областной суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> арендная плата уменьшена в тридцать
+                  семь раз.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А82-9495/2018 </span>
+                (Арбитражный суд Ярославской области, Второй арбитражный
+                апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> право на недвижимое имущество признано
+                  отсутствующим.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А41-94361/19</span>
+                (Арбитражный суд Московской области, Десятый арбитражный
+                апелляционный суд. Разработка концепции ведения проекта).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в требовании о взыскании
+                  задолженности в размере более 20.000.000 руб. за проданный
+                  земельный участок.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А21-15416/2019</span>
+                (Тринадцатый арбитражный апелляционный суд, Арбитражный суд
+                Северо-Западного округа).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отменены судебные акты о взыскании 26
+                  млн. руб./год, принятые в отсутствие участия ответчика, дело
+                  отправлено на новое рассмотрение для обеспечения возможности
+                  установления рыночной стоимости арендной платы (в разы
+                  меньшей), так как отчет об оценке, представленный
+                  администрацией, был оспорен по доводам ответчика.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-70330/2020</span>
+                (Арбитражный суд города Москвы, Девятый арбитражный
+                апелляционный суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в иске о сносе самовольной
+                  постройки.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-71037/20</span>
+                (Девятый арбитражный апелляционный суд, Арбитражный суд
+                Московского округа)
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказ Департамента городского
+                  имущества г. Москвы от договора аренды земельного участка
+                  признан недействительным.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="disputes-box">
+          <h3 class="disputes-box__title section-title">
+            Иные категории споров
+          </h3>
+
+          <ul class="disputes-box__list">
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А40-134503/16</span> (Арбитражный суд города
+                Москвы).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> прекращено исполнительное производство
+                  по истребованию первичной документации должника у его
+                  руководителя.
+                </p>
+                <p>
+                  <span>Результат:</span> прекращено производство по взысканию
+                  судебной неустойки.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № 02-0258/2021</span> (Останкинский районный суд
+                города Москвы, Московский городской суд - дело № 33-20473/2021).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> банку отказано в оспаривании брачного
+                  договора.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № 2а-1823/2018</span> (Переславский районный суд
+                Ярославской области, Ярославский областной суд).
+              </span>
+              <div class="disputes-box__result">
+                <p><span>Результат:</span> снятие кандидата с выборов.</p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № 2-1118/18</span> (Переславский районный суд
+                Ярославской области, Ярославский областной суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано в иске о защите деловой
+                  репутации депутата областной Думы.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № 12-579/2018</span> (Люберецкий городской суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отменено решение о привлечение к
+                  административной ответственности.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № 33-38851/2018</span> (Московский городской суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отменено решение суда первой
+                  инстанции, с принятием нового решения о взыскании
+                  задолженности в размере порядка 50.000.000 руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № 2-1265/2019</span> (Дорогомиловский районный суд
+                города Москвы).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отказано во взыскании задолженности по
+                  договорам поручительства в размере 207.000.000 руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № А41-33722/2019</span> (Арбитражный суд Московской
+                области).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> взыскание задолженности в размере
+                  189.110.723 руб.
+                </p>
+              </div>
+            </li>
+            <li class="disputes-box__item">
+              <span class="disputes-box__name">
+                <span>Дело № 33-38965/2020</span> (Московский городской суд).
+              </span>
+              <div class="disputes-box__result">
+                <p>
+                  <span>Результат:</span> отменено решение суда первой инстанции
+                  о расторжении договора купли-продажи бизнеса.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="experience">
+  <div class="container">
+    <div class="experience__wrapper">
+      <div class="experience__preview">
+        <img src="images/content/experience-bg.jpg" alt="Это я" />
+      </div>
+      <div class="experience__right">
+        <h1 class="experience__title section-title">
+          <span>Опыт работы юристом</span>
+          с октября 2011 года
+        </h1>
+        <div class="experience__text">
+          <p>
+            Образование высшее: диплом о присвоении квалификации юриста с июня
+            2014 года. Наличие указанного диплома позволяет вести дела в
+            арбитражных судах и судах общей юрисдикции (п. 4 ст. 61 АПК РФ, п. 5
+            ст. 53 ГПК РФ, п. 1 ст. 55 КАС РФ). Статус адвоката необходим для
+            ведения уголовных дел, которыми я не занимаюсь.
+          </p>
+
+          <p>
+            С 2019 года деятельность в области права осуществляется в статусе
+            индивидуального предпринимателя (ОГРНИП 319237500333670).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <div class="contacts__offer">
+        <h2 class="contacts__title section-title">Свяжитесь с нами</h2>
+
+        <div class="contacts__warn">
+          <p>
+            Юридические услуги оказываются преимущественно в Москве и Московской
+            области, но их качественное предоставление возможно и в иных
+            регионах России.
+          </p>
+        </div>
+
+        <div class="contacts__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--whatsapp"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--telegram"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--vk"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--facebook"></a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="contacts__phone" href="tel:+79773365698">
+          8 (977) 336 56 98
+        </a>
+
+        <div class="contacts__info">
+          <a class="contacts__mail" href="mailto:e.p.zhuravleva@gmail.com">
+            <span class="contacts__name">e-mail:</span>
+            <span class="contacts__icon"></span>
+            e.p.zhuravleva@gmail.com
+          </a>
+
+          <address class="contacts__address">
+            <span class="contacts__name">адрес: </span>
+            <span class="contacts__icon"></span>
+            121096, г. Москва, ул. Барклая, 7к4
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts__map map">
+    <div class="decor decor-top"></div>
+    <div class="decor decor-bottom"></div>
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac462851e1a3972a69a15bae8f9c253675abbfe4a0a637c4e22aa5bfab3dd3703&amp;source=constructor"
+      width="1000"
+      height="550"
+    ></iframe>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <p class="footer__text">© Журавлёва Е.П., 2021</p>
+      <p class="footer__text">Юрист Журавлёва Елена Петровна</p>
+      <address class="footer__address">
+        E-mail:
+        <a class="footer__link" href="mailto:e.p.zhuravleva@gmail.com">
+          e.p.zhuravleva@gmail.com
+        </a>
+      </address>
+      <div class="footer__phone">
+        Телефон:
+        <a class="footer__link" href="tel:+79773365698">+7 (977) 336-56-98</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

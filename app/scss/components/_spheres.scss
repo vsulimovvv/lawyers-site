@@ -1,0 +1,267 @@
+.spheres {
+  position: relative;
+  @include adaptive-value('padding-top', 110, 50, 1);
+
+  &__title {
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  &__wrapper {
+    min-height: 595px;
+    display: grid;
+    grid-template-columns: 0.85fr 1fr;
+    gap: 80px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 50px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__list {
+    @include adaptive-value('margin-bottom', 60, 30, 1);
+  }
+
+  &__item {
+    padding-left: 26px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+
+    &::after {
+      @include elDef();
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      border: 3px solid var(--color-accent);
+      left: 0;
+      top: 6px;
+    }
+  }
+
+  &__preview {
+    width: 100%;
+    height: 100%;
+    @include background(cover);
+    border-radius: 50px 10px 10px 10px;
+
+    @include adaptive-value('min-height', 620, 300, 1);
+    position: relative;
+
+    &::after,
+    &::before {
+      @include elDef();
+      z-index: -1;
+    }
+
+    &::after {
+      width: 220px;
+      height: 190px;
+      bottom: -125px;
+      right: -133px;
+
+      @include breakpointsMaxW($bp-container) {
+        display: none;
+      }
+
+      @include breakpointsMaxW(1600px) {
+        right: calc(0px + ((-133) - 0) * ((100vw - 1270px) / (1600 - 1270)));
+      }
+
+      @include backgroundImage(
+        url('../images/content/spheres-decor-1.png'),
+        contain
+      );
+    }
+
+    &::before {
+      width: 225px;
+      height: 265px;
+      bottom: -15px;
+      left: -50px;
+      @include backgroundImage(url('../images/content/mosaic.png'), contain);
+      @include breakpointsMaxW($bp-991) {
+        display: none;
+      }
+    }
+  }
+
+  &__number {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.1);
+    top: 45px;
+    left: 45px;
+    z-index: 1;
+    font-size: 172px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: $Oswald;
+    -webkit-text-stroke: 1px rgba(231, 237, 238, 0.5);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include breakpointsMaxW($bp-576) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__button {
+    max-width: 195px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 18px;
+  }
+
+  &--reverse {
+    .spheres__wrapper {
+      grid-template-columns: 1fr 0.87fr;
+      align-items: center;
+
+      @include breakpointsMaxW($bp-container) {
+        gap: 50px;
+      }
+
+      @include breakpointsMaxW($bp-991) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .spheres__left {
+      order: 1;
+
+      @include breakpointsMaxW($bp-991) {
+        order: initial;
+      }
+    }
+
+    .spheres__preview {
+      border-radius: 10px 50px 10px 10px;
+
+      &::after {
+        left: -50px;
+
+        @include breakpointsMaxW(1440) {
+          left: calc(0px + ((-50) - 0) * ((100vw - 1270px) / (1440 - 1270)));
+        }
+      }
+
+      &::before {
+        left: initial;
+        right: -50px;
+        @include backgroundImage(url('../images/content/mosaic.png'), contain);
+      }
+    }
+  }
+  &--protection {
+    .spheres__preview {
+      &::after {
+        width: 116px;
+        height: 116px;
+        bottom: -50px;
+        left: -50px;
+
+        @include backgroundImage(
+          url('../images/content/spheres-decor-2.png'),
+          contain
+        );
+
+        @include breakpointsMaxW(1440) {
+          left: calc(0px + ((-50) - 0) * ((100vw - 1270px) / (1440 - 1270)));
+        }
+      }
+    }
+  }
+  &--controversy {
+    .spheres__preview {
+      &::after {
+        width: 176px;
+        height: 120px;
+        bottom: -50px;
+        @include backgroundImage(
+          url('../images/content/spheres-decor-3.png'),
+          contain
+        );
+      }
+    }
+  }
+
+  &--contract {
+    .spheres__preview {
+      &::after {
+        width: 150px;
+        height: 150px;
+        bottom: 0;
+
+        @include backgroundImage(
+          url('../images/content/spheres-decor-4.png'),
+          contain
+        );
+      }
+    }
+  }
+  &--urban {
+    .spheres__preview {
+      &::after {
+        width: 194px;
+        height: 194px;
+        bottom: -90px;
+
+        @include backgroundImage(
+          url('../images/content/spheres-decor-5.png'),
+          contain
+        );
+      }
+    }
+  }
+  &--land {
+    .spheres__preview {
+      &::after {
+        width: 184px;
+        height: 160px;
+        bottom: -80px;
+        left: -100px;
+        @include breakpointsMaxW(1440) {
+          left: calc(0px + ((-100) - 0) * ((100vw - 1270px) / (1440 - 1270)));
+        }
+
+        @include backgroundImage(
+          url('../images/content/spheres-decor-6.png'),
+          contain
+        );
+      }
+    }
+  }
+  &--tax {
+    @include adaptive-value('margin-bottom', 110, 50, 1);
+    .spheres__preview {
+      &::after {
+        width: 241px;
+        height: 241px;
+        bottom: -120px;
+        right: -120px;
+
+        @include backgroundImage(
+          url('../images/content/spheres-decor-2.png'),
+          contain
+        );
+        @include breakpointsMaxW(1600px) {
+          right: calc(0px + ((-120) - 0) * ((100vw - 1270px) / (1600 - 1270)));
+        }
+      }
+    }
+  }
+}

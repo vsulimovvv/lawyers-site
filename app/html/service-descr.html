@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Юрист Журавлева</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link">Банкротство</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="main">
+        @include('./components/_bankruptcy.html')
+        @include('./components/_descr-service-section.html')
+        @include('./components/_descr-service-section-2.html')
+        @include('./components/_request.html')
+        @include('./components/_contacts.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

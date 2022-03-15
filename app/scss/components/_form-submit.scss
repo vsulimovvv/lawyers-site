@@ -1,0 +1,62 @@
+.form-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  @include adaptive-value('gap', 30, 20, 1);
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    @include adaptive-value('gap', 10, 5, 1);
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid #c8d0d6;
+    border-radius: 10px;
+    line-height: 1;
+
+    @include adaptive-value('padding', 22, 15, 1);
+    @include adaptive-value('font-size', 15, 13, 1);
+
+    &--textarea {
+      @include adaptive-value('min-height', 100, 70, 1);
+    }
+
+    &:focus {
+      border-color: var(--color-dark);
+    }
+
+    &::placeholder {
+      color: #9da4a9;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 17px;
+    @include adaptive-value('padding', 22, 15, 1);
+    @include adaptive-value('font-size', 17, 15, 1);
+  }
+
+  .checkbox {
+    &__text {
+      @include breakpointsMaxW($bp-576) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Юрист Журавлева</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        <div class="container container--aside">
+          @include('./components/_aside.html')
+        </div>
+        @include('./components/_hero.html')
+        @include('./components/_about-section.html')
+        @include('./components/_specialization.html')
+
+        <div class="professional-interests">
+          <div class="container">
+            <div class="professional-interests__wrapper">
+              <p>
+                Основные сферы профессиональных <br />
+                интересов это:
+              </p>
+            </div>
+          </div>
+        </div>
+
+        @include('./components/_spheres-bankruptcy.html')
+        @include('./components/_spheres-protection.html')
+        @include('./components/_spheres-controversy.html')
+        @include('./components/_spheres-contract.html')
+        @include('./components/_spheres-urban.html')
+        @include('./components/_spheres-land.html')
+        @include('./components/_spheres-tax.html')
+        @include('./components/_contacts.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

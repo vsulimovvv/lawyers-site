@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Юрист Журавлева</title>
+  </head>
+
+  <body>
+    <div class="popup popup--order-call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Обратный звонок</h2>
+      <div class="popup__text">
+        <p>Введите Ваши данные и мы свяжемся с Вами в ближайшее время</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="name">Имя</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            id="name"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Контактный телефон</label>
+          <input
+            class="form-submit__input"
+            type="tel"
+            id="tel"
+            placeholder="+7 (___) ___ - __ - __"
+            required
+          />
+        </div>
+
+        <div class="form-submit__group">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--submit">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Отправить заявку</h2>
+      <div class="popup__text">
+        <p>Введите Ваши данные и мы свяжемся с Вами в ближайшее время</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="name">Имя</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            id="name"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Контактный телефон</label>
+          <input
+            class="form-submit__input"
+            type="tel"
+            id="tel"
+            placeholder="+7 (___) ___ - __ - __"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Ваш комментарий</label>
+          <textarea
+            class="form-submit__input form-submit__input--textarea"
+            name="message"
+            id="message"
+            placeholder="Сообщение"
+          ></textarea>
+        </div>
+
+        <div class="form-submit__group">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Отправить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--consultation">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказать консультацию</h2>
+      <div class="popup__text">
+        <p>Введите Ваши данные и мы свяжемся с Вами в ближайшее время</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="name">Имя</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            id="name"
+            placeholder="Введите Ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Контактный телефон</label>
+          <input
+            class="form-submit__input"
+            type="tel"
+            id="tel"
+            placeholder="+7 (___) ___ - __ - __"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="tel">Ваш комментарий</label>
+          <textarea
+            class="form-submit__input form-submit__input--textarea"
+            name="message"
+            id="message"
+            placeholder="Сообщение"
+          ></textarea>
+        </div>
+
+        <div class="form-submit__group">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать консультацию
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <div class="overlay"></div>
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Главная</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Обо мне</a>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Услуги
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Банкротство</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Защита активов</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Споры о правах на недвижимость и оборот недвижимости
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Подрядные споры</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Градостроительные отношения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Земельные отношения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Налоговые споры и вопросы налогообложения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Сопровождение бизнеса, строительных и инвестиционных проектов
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Прочие вопросы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Публикации
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Банкротство</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Защита активов</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Споры о правах на недвижимость и оборот недвижимости
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Подрядные споры</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Градостроительные отношения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Земельные отношения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Налоговые споры и вопросы налогообложения
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Сопровождение бизнеса, строительных и инвестиционных проектов
+                </a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Прочие вопросы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo logo" href="index.html">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Обо мне</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Услуги</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Банкротство</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"> Защита активов </a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Споры о правах на недвижимость и оборот недвижимости</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Подрядные споры</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">
+                    Градостроительные отношения</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Земельные отношения</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Налоговые споры и вопросы налогообложения</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Сопровождение бизнеса, строительных и инвестиционных
+                    проектов</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Прочие вопросы</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Публикации</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Банкротство</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"> Защита активов </a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Споры о правах на недвижимость и оборот недвижимости</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Подрядные споры</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">
+                    Градостроительные отношения</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Земельные отношения</a>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Налоговые споры и вопросы налогообложения</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#"
+                    >Сопровождение бизнеса, строительных и инвестиционных
+                    проектов</a
+                  >
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Прочие вопросы</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__tools">
+        <button class="header__btn btn btn--light btn-call" type="button">
+          Заказать звонок
+        </button>
+        <a class="header__phone" href="tel:+79773365698">
+          <span class="header__phone-icon"></span>
+          <span class="header__phone-text">
+            <span class="color-accent">8 (977)</span> 336 56 98
+          </span>
+        </a>
+      </div>
+
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <div class="container container--aside">
+          <aside class="aside">
+  <div class="aside__socials socials--messengers">
+    <span class="socials__name">Мессенджеры</span>
+    <ul class="socials__list">
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--whatsapp"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--telegram"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="aside__socials socials--socials">
+    <span class="socials__name">Соц сети</span>
+    <ul class="socials__list">
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--vk"></a>
+      </li>
+      <li class="socials__item">
+        <a href="#" class="socials__link socials__link--facebook"></a>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+        </div>
+        <section class="hero">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <h1 class="hero__title section-title">Услуги юристов</h1>
+        <div class="hero__text">
+          <p>для организаций и физических лиц по широкому кругу вопросов</p>
+        </div>
+
+        <button class="hero__btn btn btn-submit" type="button">
+          Оставить заявку
+        </button>
+      </div>
+
+      <a class="hero__scroll-down" href="#about" aria-label="Перейти ниже"></a>
+    </div>
+  </div>
+
+  <div class="hero__preview"></div>
+
+  <a class="hero__scroll-down hero__scroll-down--mobile" href="#about" aria-label="Перейти ниже"></a>
+</section>
+
+        <section class="about" id="about">
+  <div class="container">
+    <div class="about__wrapper">
+      <h2 class="about__title section-title">Порядка 10 лет</h2>
+      <div class="about__text">
+        <p>
+          самостоятельно и совместно с партнерами оказываю юридические услуги
+          организациям и физическим лицам по широкому кругу правовых вопросов, в
+          частности:
+        </p>
+      </div>
+
+      <ul class="about__list">
+        <li class="about__item">
+          <div class="about__icon"></div>
+          <div class="about__descr">
+            <p>ведение дел в арбитражных судах и судах общей юрисдикции</p>
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__icon"></div>
+          <div class="about__descr">
+            <p>
+              представление интересов в государственных и муниципальных органах,
+              в том числе в налоговых органах
+            </p>
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__icon"></div>
+          <div class="about__descr">
+            <p>
+              юридическое сопровождение бизнеса, строительных и инвестиционных
+              проектов
+            </p>
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__icon"></div>
+          <div class="about__descr">
+            <p>правовой анализ территории, подлежащей застройке</p>
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__icon"></div>
+          <div class="about__descr">
+            <p>
+              due diligence в отношении объектов недвижимости или организации
+              (бизнеса)
+            </p>
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__icon"></div>
+          <div class="about__descr">
+            <p>подготовка юридических заключений</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="specialization">
+  <div class="container">
+    <div class="specialization__wrapper">
+      <div class="specialization__left">
+        <h2 class="specialization__title section-title">
+          <span>
+            Специализируюсь <br />
+            на обслуживании бизнеса
+          </span>
+
+          при разрешении сложных и нетиповых ситуаций, преимущественно в
+          судебных спорах.
+        </h2>
+      </div>
+      <div class="specialization__right">
+        <div class="specialization__text">
+          <p>
+            Я и мои партнеры всегда ориентированы на результат и предоставляем
+            заказчику объективное описание ситуации, аналитику и варианты
+            решения задачи.
+          </p>
+
+          <p>
+            Нестандартный и индивидуальный подход, опыт и деловые контакты со
+            специалистами в соответствующих сферах (экспертами, оценщиками,
+            арбитражными управляющими и т.д.) позволяют достигать поставленные
+            цели. Практика в разных юридических направлениях позволяет решать
+            задачи комплексно (учитывая разные риски) и конфиденциально.
+          </p>
+
+          <p>
+            В разделе <span>«Обо мне»</span> Вы можете ознакомиться с
+            результатами успешной практики.
+          </p>
+
+          <p>
+            Связаться со мной Вы можете по телефону или посредством электронной
+            почты – см. раздел «Контакты». Предварительный экспресс-анализ по
+            Вашему вопросу провожу бесплатно. При обращении прошу указать
+            краткую суть вопроса, иную необходимую информацию (номер судебного
+            дела, кадастровый номер объекта недвижимости и т.д.).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <div class="professional-interests">
+          <div class="container">
+            <div class="professional-interests__wrapper">
+              <p>
+                Основные сферы профессиональных <br />
+                интересов это:
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section class="spheres">
+  <div class="container">
+    <div class="spheres__wrapper">
+      <div class="spheres__left">
+        <h2 class="spheres__title section-title">Банкротство</h2>
+
+        <ul class="spheres__list">
+          <li class="spheres__item">
+            Защита от субсидиарной ответственности, привлечение к субсидиарной
+            ответственности
+          </li>
+          <li class="spheres__item">
+            Оспаривание сделок/защита от оспаривания сделок.
+          </li>
+          <li class="spheres__item">
+            Предбанкротная подготовка, анализ текущей ситуации и перспектив
+            банкротства
+          </li>
+          <li class="spheres__item">
+            Включение в реестр кредиторов должника, оспаривание фиктивной
+            задолженности
+          </li>
+          <li class="spheres__item">
+            Обжалование действий (бездействия) арбитражного управляющего,
+            взыскание с него убытков.
+          </li>
+        </ul>
+
+        <div class="spheres__actions">
+          <button class="spheres__button btn btn-submit" type="button">
+            Оставить заявку
+          </button>
+          <a class="spheres__button btn btn--transparent" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div
+        class="spheres__preview"
+        style="background-image: url('images/content/spheres/bankruptcy.jpg')"
+      >
+        <span class="spheres__number">01</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="spheres spheres--reverse spheres--protection">
+  <div class="container">
+    <div class="spheres__wrapper">
+      <div class="spheres__left">
+        <h2 class="spheres__title section-title">Защита активов</h2>
+
+        <ul class="spheres__list">
+          <li class="spheres__item">
+            Защита активов бизнеса, корпоративных прав
+          </li>
+          <li class="spheres__item">Защита личных активов</li>
+        </ul>
+
+        <div class="spheres__actions">
+          <button class="spheres__actions btn btn-submit" type="button">
+            Оставить заявку
+          </button>
+          <a class="spheres__button btn btn--transparent" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div
+        class="spheres__preview"
+        style="background-image: url('images/content/spheres/protection.jpg')"
+      >
+        <span class="spheres__number">02</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="spheres spheres--controversy">
+  <div class="container">
+    <div class="spheres__wrapper">
+      <div class="spheres__left">
+        <h2 class="spheres__title section-title">
+          Споры о правах на недвижимость и оборот недвижимости
+        </h2>
+
+        <ul class="spheres__list">
+          <li class="spheres__item">
+            Защита в судебных спорах о правах на недвижимость, об установлении
+            границ земельных участков, о сносе самовольной постройки, об
+            оспаривании действий (бездействия) публичных органов.
+          </li>
+          <li class="spheres__item">
+            due diligence в отношении объектов недвижимости.
+          </li>
+        </ul>
+
+        <div class="spheres__actions">
+          <button class="spheres__actions btn btn-submit" type="button">
+            Оставить заявку
+          </button>
+          <a class="spheres__button btn btn--transparent" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div
+        class="spheres__preview"
+        style="background-image: url('images/content/spheres/controversy.jpg')"
+      >
+        <span class="spheres__number">03</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="spheres spheres--reverse spheres--contract">
+  <div class="container">
+    <div class="spheres__wrapper">
+      <div class="spheres__left">
+        <h2 class="spheres__title section-title">Подрядные споры</h2>
+
+        <ul class="spheres__list">
+          <li class="spheres__item">
+            Представление интересов подрядчиков и заказчиков по спорам об объёме
+            и качестве работ, применении финансовых санкций по договорам подряда
+            и т.д.
+          </li>
+        </ul>
+
+        <div class="spheres__actions">
+          <button class="spheres__actions btn btn-submit" type="button">
+            Оставить заявку
+          </button>
+          <a class="spheres__button btn btn--transparent" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div
+        class="spheres__preview"
+        style="background-image: url('images/content/spheres/contract.jpg')"
+      >
+        <span class="spheres__number">04</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="spheres spheres--urban">
+  <div class="container">
+    <div class="spheres__wrapper">
+      <div class="spheres__left">
+        <h2 class="spheres__title section-title">
+          Градостроительные отношения
+        </h2>
+
+        <ul class="spheres__list">
+          <li class="spheres__item">
+            Взаимодействие с контролирующими органами в строительной и смежных
+            сферах. Защита при проведении проверок и в случае предъявления
+            претензий контролирующими органами.
+          </li>
+          <li class="spheres__item">
+            Анализ существующего градостроительного регламента земельного
+            участка и вариантов его пересмотра.
+          </li>
+          <li class="spheres__item">
+            Изменение градостроительного регламента участков (правил
+            землепользования и застройки Москвы и муниципалитетов Московской
+            области).
+          </li>
+        </ul>
+
+        <div class="spheres__actions">
+          <button class="spheres__actions btn btn-submit" type="button">
+            Оставить заявку
+          </button>
+          <a class="spheres__button btn btn--transparent" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div
+        class="spheres__preview"
+        style="background-image: url('images/content/spheres/urban.jpg')"
+      >
+        <span class="spheres__number">05</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="spheres spheres--reverse spheres--land">
+  <div class="container">
+    <div class="spheres__wrapper">
+      <div class="spheres__left">
+        <h2 class="spheres__title section-title">Земельные отношения</h2>
+
+        <ul class="spheres__list">
+          <li class="spheres__item">
+            Изменение разрешённого использования, установление условно
+            разрешенных и вспомогательных видов.
+          </li>
+          <li class="spheres__item">
+            Снижение кадастровой стоимости участков и объектов капитального
+            строительства.
+          </li>
+          <li class="spheres__item">
+            Оптимизация земельного налога, налога на имущество, исчисляемого по
+            кадастровой стоимости, арендной платы за землю. Исключение объектов
+            из перечня объектов, облагаемых налогом на имущество по кадастровой
+            стоимости в Москве и Московской области, или их включение в этот
+            перечень.
+          </li>
+          <li class="spheres__item">
+            Защита в ходе проверок, и в случае претензий контролирующих органов
+            в связи с нецелевым использованием участков, самовольным
+            строительством и т.д.
+          </li>
+          <li class="spheres__item">
+            Предоставление участков из государственной собственности.
+          </li>
+        </ul>
+
+        <div class="spheres__actions">
+          <button class="spheres__actions btn btn-submit" type="button">
+            Оставить заявку
+          </button>
+          <a class="spheres__button btn btn--transparent" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div
+        class="spheres__preview"
+        style="background-image: url('images/content/spheres/land.jpg')"
+      > <span class="spheres__number">06</span></div>
+    </div>
+  </div>
+</section>
+
+        <section class="spheres spheres--tax">
+  <div class="container">
+    <div class="spheres__wrapper">
+      <div class="spheres__left">
+        <h2 class="spheres__title section-title">
+          Налоговые споры и вопросы налогообложения
+        </h2>
+
+        <ul class="spheres__list">
+          <li class="spheres__item">
+            Анализ рисков и наличия налоговых правонарушений, предоставление
+            рекомендаций по их устранению.
+          </li>
+          <li class="spheres__item">
+            Комплексное сопровождение налоговых проверок, включая подготовку
+            позиции и рекомендаций по ее усилению, правовую помощь в рамках
+            допросов свидетелей.
+          </li>
+          <li class="spheres__item">
+            Сопровождение налоговых споров, включая обжалование решений
+            налоговых органов в досудебном и судебном порядке.
+          </li>
+          <li class="spheres__item">
+            Подготовка структуры собственности активов для снижения налоговых
+            затрат для их приобретения или продажи.
+          </li>
+          <li class="spheres__item">
+            Анализ способов оптимизации налогообложения и их рекомендации.
+          </li>
+        </ul>
+
+        <div class="spheres__actions">
+          <button class="spheres__actions btn btn-submit" type="button">
+            Оставить заявку
+          </button>
+          <a class="spheres__button btn btn--transparent" href="#">Подробнее</a>
+        </div>
+      </div>
+      <div
+        class="spheres__preview"
+        style="background-image: url('images/content/spheres/tax.jpg')"
+      >
+        <span class="spheres__number">07</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <div class="contacts__offer">
+        <h2 class="contacts__title section-title">Свяжитесь с нами</h2>
+
+        <div class="contacts__warn">
+          <p>
+            Юридические услуги оказываются преимущественно в Москве и Московской
+            области, но их качественное предоставление возможно и в иных
+            регионах России.
+          </p>
+        </div>
+
+        <div class="contacts__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--whatsapp"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--telegram"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--vk"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--facebook"></a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="contacts__phone" href="tel:+79773365698">
+          8 (977) 336 56 98
+        </a>
+
+        <div class="contacts__info">
+          <a class="contacts__mail" href="mailto:e.p.zhuravleva@gmail.com">
+            <span class="contacts__name">e-mail:</span>
+            <span class="contacts__icon"></span>
+            e.p.zhuravleva@gmail.com
+          </a>
+
+          <address class="contacts__address">
+            <span class="contacts__name">адрес: </span>
+            <span class="contacts__icon"></span>
+            121096, г. Москва, ул. Барклая, 7к4
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts__map map">
+    <div class="decor decor-top"></div>
+    <div class="decor decor-bottom"></div>
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac462851e1a3972a69a15bae8f9c253675abbfe4a0a637c4e22aa5bfab3dd3703&amp;source=constructor"
+      width="1000"
+      height="550"
+    ></iframe>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <p class="footer__text">© Журавлёва Е.П., 2021</p>
+      <p class="footer__text">Юрист Журавлёва Елена Петровна</p>
+      <address class="footer__address">
+        E-mail:
+        <a class="footer__link" href="mailto:e.p.zhuravleva@gmail.com">
+          e.p.zhuravleva@gmail.com
+        </a>
+      </address>
+      <div class="footer__phone">
+        Телефон:
+        <a class="footer__link" href="tel:+79773365698">+7 (977) 336-56-98</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.sidebar {
+  border-radius: 20px;
+
+  &__list {
+    padding: 30px;
+    background-color: var(--color-white);
+  }
+
+  &__item {
+    border-bottom: 1px solid #ecedee;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    padding: 13px 0;
+    padding-right: 20px;
+    color: #5e696e;
+
+    &::after {
+      @include elDef();
+      width: 10px;
+      height: 8px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      @include maskImage(url('../images/icons/chevron.svg'), contain);
+      background-color: var(--color-text);
+      transform: rotate(-90deg);
+    }
+
+    &:hover,
+    &--active {
+      color: var(--color-accent);
+
+      &::after {
+        background-color: var(--color-accent);
+      }
+    }
+  }
+}
